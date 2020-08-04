@@ -1,0 +1,100 @@
+<!-- Bagus Dzikri Hidayat -->
+<!-- 3276032506950004 -->
+<!-- Beasiswa -->
+<!-- Web Developer -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form Registrasi Mahasiswa Baru</title>
+</head>
+<style type="text/css">
+    table tr {
+        line-height: 2.5;
+    }
+</style>
+<body>
+    <center><h1>Form Registrasi Mahasiswa Baru</h1></center>
+    <form>
+        <table border="0" align="center">
+            <tr>
+                <td><b>Nama</b></td>
+                <td>: <input placeholder="Isi dengan nama lengkap" size="30"></td>
+            </tr>
+
+            <tr>
+                <td><b>NIM</b></td>
+                <td>: <input placeholder="NIM" size="30"></td>
+            </tr>
+            
+            <tr>
+                <td><b>Tempat Lahir</b></td>
+                <td>: <input placeholder="Kabupaten/Kota" size="30"></td>
+                <td>
+                    <b>Tanggal Lahir</b>
+                    : <input type="date" name="tanggal-lahir">
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Domisili</b></td>
+                <td>: <input placeholder="Kabupaten/Kota Domisili" size="30"></td>
+            </tr>
+
+            <tr>
+                <td><b>Alamat</b></td>
+                <td>: <input placeholder="Alamat Tempat Tinggal" size="30"></td>
+            </tr>
+
+            <tr>
+                <td><b>Jenis Kelamin</b></td>
+                <td>: 
+                    <input type="radio" name="jenis_kelamin" value="laki-laki" />Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Program Studi</b></td>
+                <td>: 
+                    <select name="program_studi">
+                        <option value="Ilmu Komputer">Ilmu Komputer</option>
+                        <option value="Sistem Komputer">Sistem Komputer</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Komputer">Teknik Komputer</option>
+                        <option value="Manajemen Informatika">Manajemen Informatika</option>
+                        <option value="Informatika">Informatika</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Minat</b></td>
+                <td>:
+                    <input type="checkbox" name="minat_softwareEngineering" />Software Engineering
+                    <input type="checkbox" name="minat_basisData" />Basis Data
+                </td>
+                <td>
+                    <input type="checkbox" name="minat_dataScience" />Data Science
+                    <input type="checkbox" name="minat_jaringanKomputer" />Jaringan Komputer
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>E-mail</b></td>
+                <td>: <input placeholder="E-mail" size="30"></td>
+            </tr>
+
+            <tr>
+                <td><b>No. Telepon/HP</b></td>
+                <td>: <input placeholder="No. Telepon/HP" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="4"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
