@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Membuat Form Sederhana</title>
+</head>
+<body>
+  <form action="formulir.html" method="get">
+    Nama: <input type="text" name="name" value="Nama Kamu"><br />
+    
+    Password: <input type="password" name="password" ><br />
+    
+    Jenis Kelamin:
+    <input type="radio" name="jenis_kelamin" value="laki-laki" checked />Laki-laki
+    <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
+    <br />
+    
+    Hobi:
+    <input type="checkbox" name="hobi_baca" />Membaca Buku
+    <input type="checkbox" name="hobi_nulis" checked />Menulis
+    <input type="checkbox" name="hobi_mancing" />Memancing
+    <br />
+    
+    Asal Kota:
+    <select name="asal_kota">
+      <option value="Kota Jakarta">Jakarta</option>
+      <option value="Kota Semarang">Semarang</option>
+      <option value="Kota Bandung">Bandung</option>
+    </select>
+    <br />
+    
+    Komentar Anda:
+    <textarea name="komentar" rows="5" cols="20">
+    Silakan katakan isi hati Anda
+    </textarea>
+    <br />
+    
+    <input type="submit" value="Kirim" >
+  </form>
+</body>
