@@ -4,16 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>My Web</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style>
-    p {
-        text-align: center; 
-        color: #6ced15; 
-    }
-</style>
 <body>
     <p>Every paragraph will be affected by the style</p>
     <p id="para1">Me too</p>
     <p>And me</p>
+
+    <h2>The border-style Property</h2>
+    <p>This property specifies what kind of border to display:</p>
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders:</p>
+
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+    Always specify the "border-style" property to set the borders first.</p>
+
+    <h2>The border-color Property</h2>
+    <p>This property specifies the color of the four borders:</p>
+
+    <p class="first">A solid pink border</p>
+    <p class="second">A solid green border</p>
+    <p class="third">A dotted blue border</p>
+
+    <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+    
+    <h2>Individual Border Sides</h2>
+    <p class="mixed-border">2 different border styles.</p>
+
+    <div>
+        This element has both 70px margin and padding.
+    </div>
+    <!--div>
+        This element has a 70px margin.
+    </div-->
+
+    <h2>Using individual margin properties</h2>
+
+    <div class="second">
+        This div element has both 100px of top and bottom margins with a 150px right margin and a 80px left margin.
+    </div>
+    <h2>Using individual padding properties</h2>
+
+    <div class="third">
+        This div element has both 50px of top and right margins with a 30px bottom margin and a 80px left margin.
+    </div>
+    <p>In this example, the h1 element has a 50px bottom margin and the h2 element has a 20px top margin.
+    The vertical margin between them should have been 70px (50px + 20px). However, the actual margin has ended up
+    being 50px.</p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
 </body>
 </html>
