@@ -1,0 +1,50 @@
+    body {
+        background-image: url('image/unnamed.jpg');
+        background-size: 128px 126px;
+    }
+
+    center {
+        background-color: #1bba24;
+        color: #ab5561;
+        border: 2px solid red;
+        padding: 2px;
+        margin: 10px 320px 10px 320px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .button {
+        background-color: #233165;
+        border: none;
+        color: white;
+        padding: 3px 19px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    table tr {
+        line-height: 2.5;
+    }
+
+    table.data-motor tr th {
+        background-color: #b21154;
+        font-family: Arial;
+        color: yellow;
+    }
+
+    table.data-motor tr td {
+        background-color: #233cca;
+        text-align: center;
+        font-family: Verdana;
+        color: white;
+    }
+
+    form {
+        background-color: white;
+        margin: 40px 330px 40px 330px;
+        border: solid;
+    }
