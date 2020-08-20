@@ -9,6 +9,23 @@
     li {
         display: inline;
     }
+
+    span {
+        display: block;
+    }
+
+    h1.hidden1 {
+        display: none;
+    }
+
+    h1.hidden2 {
+        visibility: hidden;
+    }
+
+    div.static {
+        position: static;
+        border: 3px solid #b6112d;
+    }
 </style>
 <body>
     <p style="border: 1px solid;">This is a block element <span style="border: 1px solid; color: #e3441b;">This is an inline element</span></p>
@@ -19,5 +36,18 @@
         <li><a href="#">CSS</a></li>
         <li><a href="#">JS</a></li>
     </ul>
+
+    <span>A dispaly property with a value of "block" results in</span>
+    <span>a line break between two elements</span>
+
+    <h1>This is a visible heading</h1>
+    <h1 class="hidden1">This is a hidden heading</h1>
+    <h1 class="hidden2">This is a heading with a hidden visibility</h1>
+    <p>The h1 element with a none display doesn't take up any space.</p>
+
+    <p>An element with a static position is always positioned according the normal flow of the web page.</p>
+    <div class="static">
+        This element has a static position
+    </div>
 </body>
 </html>

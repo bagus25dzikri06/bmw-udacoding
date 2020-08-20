@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Web</title>
+</head>
+<style>
+    div.static {
+        position: static;
+        border: 3px solid #b6112d;
+    }
+
+    div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        left: 30px;
+        border: 3px solid #4551ca;
+    }
+
+    div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #22ad15;
+    }
+
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #3fc163;
+    }
+
+    div.sticky { 
+        position: -webkit-sticky; 
+        position: sticky; 
+        top: 0; 
+        padding: 5px; 
+        background-color: #d33125;
+        border: 2px solid #248815; 
+    }
+</style>
+<body>
+    <p>An element with a static position is always positioned according the normal flow of the web page.</p>
+    <div class="static">
+        This element has a static position
+    </div>
+
+    <p>An element with a relative position is positioned relative to its normal position.</p>
+    <p>An element with an absolute position is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like the fixed one).</p>
+    
+    <div class="relative">
+        This element has a relative position
+        <div class="absolute">
+            This element has an absolute position
+        </div>
+    </div>
+
+    <p>An element with a fixed position is positioned relative to the viewport, where it always stays in the same place even when the web page is scrolled.</p>
+    <div class="fixed">
+        This element has a fixed position
+    </div>
+
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+    <p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p> 
+    <div class="sticky">
+        I am sticky!
+    </div> 
+    <div style="padding-bottom:2000px"> 
+        <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p> <p>Scroll back up to remove the stickyness.</p> <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> 
+    </div>
+</body>
+</html>
